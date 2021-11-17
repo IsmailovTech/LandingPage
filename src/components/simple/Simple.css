@@ -1,0 +1,89 @@
+.simple-main {
+  width: 100%;
+  height: max-content;
+  min-height: 100vh;
+  background-color: rgba(15, 16, 69, 255);
+}
+
+.simple-h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.33px;
+  color: #99efd0;
+}
+
+.simple-h1 span {
+  color: #f2994a;
+}
+
+.simple-p {
+  font-family: Inter;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #8476aa;
+  margin-top: 32px;
+}
+
+.simple-numb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.simple-numb h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.33px;
+  color: #99efd0;
+}
+
+.simple-numb h1 p {
+  font-family: Inter;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #8476aa;
+  margin-top: 16px;
+}
+
+.simple2-h1 {
+  margin-top: 169px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 50px;
+  text-align: center;
+  color: #99efd0;
+}
+
+.simple2-h1 span{
+    color: #f2994a;
+}
+.simp-btn{
+  margin-top: 46px !important;
+}
+
+.create{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.frame{
+  margin-top: -100px;
+}
+

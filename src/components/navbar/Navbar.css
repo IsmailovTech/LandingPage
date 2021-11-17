@@ -62,7 +62,6 @@
     background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
     color: #fff;
     transform: translate(-400px);
-    display:block;
 }
 
 .nav-ul2{
@@ -84,7 +83,6 @@
 }
 
 .open-nav{
-    /* display:none; */
     transform: translate(0px);
     transition: 1s;
 }
@@ -141,3 +139,6 @@
          transform: translate(-400px);
     }
 }
+
+
+/* //// === //// */

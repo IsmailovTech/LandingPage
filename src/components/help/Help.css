@@ -1,0 +1,131 @@
+.help-main {
+  width: 100%;
+  height: max-content;
+  min-height: 100vh;
+  background: rgba(15, 16, 69, 255);
+  padding-top: 80px;
+  position: relative;
+}
+
+.help {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.help-right {
+  width: 50%;
+}
+
+.help-right h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.325px;
+  color: #99efd0;
+}
+
+.help-right-p {
+  font-family: Inter;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-top: 32px;
+  color: #8476aa;
+}
+
+.help-cont {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cont1 h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #99efd0;
+  margin-top: 20px;
+}
+
+.cont1 p {
+  font-family: Inter;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #8476aa;
+  margin-top: 8px;
+}
+
+.grbg {
+  position: absolute;
+  right: 0;
+  top: -30px;
+}
+
+.last-gr {
+  width: 100%;
+  background-image: url(../../assets/photos/lastgroup.png);
+  background-repeat: no-repeat;
+  margin-top: 146px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 185px;
+}
+
+.input {
+  width: 940px;
+  height: 325px;
+  background: rgba(60, 62, 125, 0.19);
+  backdrop-filter: blur(134px);
+  border-radius: 5px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-rc {
+  background: #f6f6f6;
+  opacity: 0.1;
+  border-radius: 5px;
+}
+
+.input h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #f2994a;
+}
+
+.input p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #95a1bb;
+  margin-top: 10px;
+}
+
+.box-input{
+    margin-top: 23px;
+}
+
+#send-btn{
+    height: 100%;
+    width: 128px;
+    background: #F2994A;
+
+}

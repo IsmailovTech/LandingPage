@@ -1,0 +1,50 @@
+.invest-main {
+  width: 100%;
+  height: max-content;
+  min-height: 100vh;
+  background: rgba(15, 16, 69, 255);
+  padding-top: 180px;
+  position: relative;
+}
+
+.invest{
+    display: flex;
+    align-items: center;
+}
+
+.invest-left h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 50px;
+  color: #99efd0;
+}
+
+.invest-left h1 span {
+  color: #f2994a;
+}
+
+.invest-left p {
+  font-family: Inter;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  color: #8476aa;
+  margin-top: 32px;
+}
+
+#invest-btn{
+    margin-top: 63px;
+    background-color: #f2994a;
+}
+
+
+.inv-obj{
+    position:absolute;
+    right: 0px;
+}
+
+.inv-gr{
+    margin-left: 150px;
+}

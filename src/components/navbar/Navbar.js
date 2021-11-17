@@ -9,7 +9,6 @@ import { AiOutlineClose } from "react-icons/ai";
 
 
 
-
 export function Navbar() {
 
   const[set, setClick] = useState(false)
@@ -71,7 +70,7 @@ export function Navbar() {
         </div>
       </div>
     {/* resposive */}
-      <div className={set? "open-nav box1" : "box1 open-nav2"} >
+      {/* <div className={set? "open-nav box1" : "box1 open-nav2"} >
         <ul className="nav-ul2">
           <li className="nav-li2">
             <a href="#">ABOUT</a>
@@ -89,7 +88,9 @@ export function Navbar() {
             <a href="#">BENEFITS</a>
           </li>
         </ul>
-      </div>
+      </div>  */}
+      
+
     </div>
   );
 }
