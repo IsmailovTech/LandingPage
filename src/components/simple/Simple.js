@@ -1,7 +1,10 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "../simple/Simple.css"
 import Button from "@mui/material/Button";
 import frame from "../../assets/photos/Frame.png"
+
+
+    
 
 const Simple = () => {
     return (
@@ -15,6 +18,8 @@ will help you work faster without limiting creative freedom.</p>
 
                 <div className="simple-numb">
                         <h1>100+ 
+                        
+
                             <p>5 Reasons To Purchase <br/> Desktop Computers</p>
                         </h1>
 

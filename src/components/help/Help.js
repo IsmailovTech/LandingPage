@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import "../help/Help.css"
 import group from "../../assets/photos/Group 13.png"
 import grbg from "../../assets/photos/bg-group.png"
@@ -16,6 +16,9 @@ import Button from "@mui/material/Button";
 
 
 const Help = () => {
+
+const myRef = useRef();
+
     return (
         <div>
             <div className="help-main">
@@ -50,10 +53,12 @@ const Help = () => {
                             <p>There are many reasons to get down and start to get <br/> depressed about your situation. </p>
                         
                             <Box className="box-input" component="form" noValidate autoComplete="off">
-                                 <FormControl className="input-rc" sx={{ width: '380px'}}>
-                                   <OutlinedInput placeholder="Your Email" />
-                                  </FormControl>
-                                <Button variant="contained" color="warning" id="send-btn" >Send&nbsp;</Button>
+                                
+                                    <FormControl className="input-rc" sx={{ width: '380px'}}>
+                                    <OutlinedInput placeholder="Your Email" />
+                                    </FormControl>
+                                    <Button  variant="contained" color="warning" id="send-btn" >Send&nbsp;</Button>
+
                             </Box>
 
                             <p>No spam. Only releases, updates and discounts</p>

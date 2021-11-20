@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from 'react'
 import "../body/Body.css";
 import Button from "@mui/material/Button";
 import "@fontsource/inter";
@@ -12,12 +12,21 @@ import { MdTipsAndUpdates } from "react-icons/md";
 import { MdWifiTethering } from "react-icons/md"; 
 import { MdPestControl } from "react-icons/md"; 
 import bgci from "../../assets/photos/Group-bgc.png";
+import './main.scss';
+
+import ReactDOM from 'react-dom'
+import ModalVideo from 'react-modal-video'
+
+import vedio from "../../assets/photos/vedio.png"
 
 
 
 
 
 export default function Body() {
+
+    const [isOpen, setOpen] = useState(false)
+
   return (
     <div>
       <div className="body-main ">
@@ -35,10 +44,19 @@ export default function Body() {
           </Button>
 
           <div className="body-vedio" >
-              <div className="ved"><Vedio /></div> 
+
+              <div className="ved">
+                  <img src={vedio} alt="photo" onClick={()=> setOpen(true)}  />
+                  <React.Fragment>
+			            <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="mK7lDooAGJw" onClose={() => setOpen(false)} />
+	          	  </React.Fragment>
+
+              </div>    
+                 
+                 
                  <div className="cont-ved">
                      <p>The harder you work for something, the greater you’ll feel when you achieve it.</p>
-                    <Button>Watch&nbsp;preview</Button>
+                    <Button onClick={()=> setOpen(true)} >Watch&nbsp;preview</Button>
                  </div>
               
           </div>
@@ -50,7 +68,7 @@ export default function Body() {
         <div className="bgc-choice"></div>
             <div className="choice-main container">
                     <h1 className="choice-main-h1" >Your choice</h1>
-                    <p className="choice-main-p">There are many reasons to get down and start to get depressed about your situation. </p>
+                    <p className="choice-main-p">There aVedre many reasons to get down and start to get depressed about your situation. </p>
 
                     <div className="containers">
                         <div className="card-box1">
