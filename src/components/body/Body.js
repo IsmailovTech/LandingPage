@@ -23,6 +23,7 @@ import vedio from "../../assets/photos/vedio.png"
 
 
 
+
 export default function Body() {
 
     const [isOpen, setOpen] = useState(false)
@@ -142,6 +143,7 @@ export default function Body() {
             </div>
         
        </div>
+    
     </div>
   );
 }

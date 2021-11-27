@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import logo from "../../assets/photos/Logo.svg";
 import { HiMenu } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import Modal from 'react-awesome-modal';  
 
 
 
@@ -12,6 +13,25 @@ import { AiOutlineClose } from "react-icons/ai";
 export function Navbar() {
 
   const[set, setClick] = useState(false)
+
+  const[state,setState] = useState(false)
+  const[sign,setSign] = useState(false)
+
+  function openModal(){
+    setState(true)
+  }
+
+  function closeModal(){
+    setState(false)
+  }
+
+  function openSign(){
+    setSign(true)
+  }
+
+  function closeSign(){
+    setSign(false)
+  }
 
 
   function open(){
@@ -24,6 +44,45 @@ export function Navbar() {
     <div>
       <div className="nav">
         <div className="container navbar">
+{/* signIn */}
+
+<section>
+                <Modal visible={sign} width="500" height="400" effect="fadeInDown" onClickAway={closeSign}>
+
+                        <div className="signUp-modal">
+                            <h1>SIGN IN</h1>
+                                <form className="signUp-form">
+                                    <input className="signUp-input" type="email" required placeholder="Email" /><br/>   
+                                    <input className="signUp-input" type="password" visible required placeholder="Password" /><br/>   
+                                    <Button variant="contained" color="success" >SIGN IN</Button>
+                                    <Button id="signup-btn" variant="contained" color="warning" ><a href="javascript:void(0);" onClick={closeSign}>Close</a></Button>
+                                </form>
+                        </div>
+              
+                </Modal>
+            </section>
+
+{/* signup */}
+          <section>
+                <Modal visible={state} width="500" height="550" effect="fadeInDown" onClickAway={closeModal}>
+
+                        <div className="signUp-modal">
+                            <h1>SIGN UP</h1>
+                                <form className="signUp-form">
+                                    <input className="signUp-input" type="text" required placeholder="First Name" /><br/>
+                                    <input className="signUp-input" type="text" required placeholder="Last Name" /><br/>
+                                    <input className="signUp-input" type="email" required placeholder="Email" /><br/>   
+                                    <input className="signUp-input" type="password" visible required placeholder="Password" /><br/>   
+                                    <input className="signUp-input" type="password" required placeholder="New Password" /><br/>   
+                                    <Button variant="contained" color="success" >SIGN UP</Button>
+                                    <Button id="signup-btn" variant="contained" color="warning" ><a href="javascript:void(0);" onClick={closeModal}>Close</a></Button>
+                                </form>
+                        </div>
+              
+                </Modal>
+            </section>
+
+
           <Box sx={{ width: "50%", p: 1, my: 0.5 }} >
            
             {/* Responsive logo */}
@@ -60,10 +119,10 @@ export function Navbar() {
           </Box>
 
           <Box className="nav-btn" sx={{ width: "50%", p: 1, my: 0.5 }}>
-            <Button variant="outlined" color="warning" id="war-btn1">
+            <Button variant="outlined" color="warning" id="war-btn1" onClick={openSign} >
               SIGN&nbsp;IN
             </Button>
-            <Button variant="contained" color="warning" id="war-btn2">
+            <Button variant="contained" color="warning" id="war-btn2" onClick={openModal}>
               SIGN&nbsp;UP
             </Button>
           </Box>
